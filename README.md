@@ -38,7 +38,7 @@
 - Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
 - Android App Bundle (*.aab), 에디터 및 OS 업데이트 대응
 - 패치 시스템에서부터 지속적 통합/배포 (CD/CI)를 자기학습하여 팀에 전파
-![](https://github.com/ez8801/Portfolio/blob/main/img/Pipeline.PNG)
+![](https://github.com/ez8801/Portfolio/blob/main/img/jenkins_01.PNG)
 
 
 - 각종 컨텐츠 구현
@@ -51,25 +51,25 @@
 
 ### Knights of night
 - 각종 컨텐츠 구현
-![](https://github.com/ez8801/Portfolio/blob/main/img/Contents.png)
+![](https://github.com/ez8801/Portfolio/blob/main/img/kon_01.png)
 
 - 밸런스 툴 제작
 - 넷마블 메모리 보안 모듈 적용
 - Debug Monitor
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/Console.png)
+![](/img/tool_console.png)
 
 - 밸런스 툴 제작
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/Balance%20Tools.png)
+![](/blob/main/img/tool_balance.png)
  
 # Personal Experience & Projects
 ##### 어플리케이션 제작 및 T store 배포
-![](https://github.com/ez8801/Portfolio/blob/main/img/App.png)
+![](https://github.com/ez8801/Portfolio/blob/main/img/personal_exp_01.png)
 
 ##### 학생회 홈페이지 제작
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/HomePage.png)
+![](https://github.com/ez8801/Portfolio/blob/main/img/personal_exp_02.png)
 
 node.js, EXPRESS, Jade 활용
 
@@ -99,7 +99,7 @@ curl
 --data-binary "{\"body\":\"$JOB_NAME v${APP_VERSION} r${REVISION} Build Started. \"}"
 ```
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/BuildNotification.PNG)
+![](https://github.com/ez8801/Portfolio/blob/main/img/jenkins_webhook_01.PNG)
 
 > Note: 젠킨스 원격 빌드을 이용하면 메신저에서 클릭 한번 만으로 후속조치(ex) 배포)를 할 수 있다. 
 > 
@@ -177,7 +177,7 @@ private static void RestoreUnityBuildId()
 java -jar appguard-cli-builder.jar -h -i ${UNSIGNED_APK_NAME}
 
 ## Sign
-jarsigner -verbose -tsa http://timestamp.comodoca.com/rfc3161 -sigalg SHA1withRSA -digestalg SHA1 -keystore user.keystore ${APPGUARD_APK_NAME} basebss -storepass basebase -keypass basebase
+jarsigner -verbose -tsa http://timestamp.comodoca.com/rfc3161 -sigalg SHA1withRSA -digestalg SHA1 -keystore ${KEYSTORE_NAME} ${APPGUARD_APK_NAME} ${ALIAS_NAME} -storepass ${STORE_PASS} -keypass ${KEY_PASS}
 
 ## Zip align
 ./zipalign -v 4 ${APPGUARD_APK_NAME} ${WORKSPACE}/OUTPUT/APK/${APK_NAME}
@@ -252,33 +252,19 @@ public abstract class Table<T> : ITable where T : IDeserializable, new()
 // Verity
 private bool IsValid()
 {
-    _EndIndex = _Offset;
+    byte[] keyBytes = null;
+        
+    //...
+    // keyBytes = GetKeyBytes();
+    //...
 
-    short keyBytesLength = 0;
-    Deserialize(ref keyBytesLength);
+    HMACMD5 hmaCMD5 = new HMACMD5(keyBytes);
 
-    if (keyBytesLength > 0)
-    {
-        byte[] keyBytes = new byte[keyBytesLength];
-        Array.Copy(_Bytes, _Offset, keyBytes, 0, keyBytesLength);
-        _Offset += keyBytesLength;
+    //...
 
-        HMACMD5 hmaCMD5 = new HMACMD5(keyBytes);
-
-        int digestLength = _Bytes.Length - _Offset;
-        byte[] digest = new byte[digestLength];
-        Array.Copy(_Bytes, _Offset, digest, 0, digestLength);
-
-        int dataLength = _EndIndex - _StartIndex;
-        byte[] data = new byte[dataLength];
-        Array.Copy(_Bytes, _StartIndex, data, 0, dataLength);
-
-        byte[] computedHash = hmaCMD5.ComputeHash(data);
-        if (IsMatch(ref computedHash, ref digest))
-            return true;
-    }
-
-    return false;
+    byte[] computedHash = hmaCMD5.ComputeHash(data);
+    if (IsMatch(ref computedHash, ref digest))
+        return true;
 }
 ```
 
