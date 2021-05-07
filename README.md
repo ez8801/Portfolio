@@ -38,10 +38,12 @@
 - Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
 - Android App Bundle (*.aab), 에디터 및 OS 업데이트 대응
 - 패치 시스템에서부터 지속적 통합/배포 (CD/CI)를 자기학습하여 팀에 전파
-![](https://github.com/ez8801/Portfolio/blob/main/img/jenkins_01.PNG)
+![](img/jenkins_01.PNG)
 
 
 - 각종 컨텐츠 구현
+![](img/bss_01.png)
+![](img/bss_02.png)
 
 ### The King Of Fighters All Stars
 - 컨텐츠 제작
@@ -271,8 +273,8 @@ private bool IsValid()
 
 #### Bundle Manifest Window
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/AssetBundleManifest.PNG)
+![](img/tool_assetbundlemanifest.PNG)
 
 #### Dependency Tool
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/DependencyTools.png)
+![](img/tool_dependency.png)
