@@ -61,7 +61,7 @@
 
 - 밸런스 툴 제작
 
-![](/blob/main/img/tool_balance.png)
+![](img/tool_balance.png)
  
 # Personal Experience & Projects
 ##### 어플리케이션 제작 및 T store 배포
