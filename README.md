@@ -51,7 +51,7 @@
 
 ### Knights of night
 - 각종 컨텐츠 구현
-![](https://github.com/ez8801/Portfolio/blob/main/img/kon_01.png)
+![](/img/kon_01.png)
 
 - 밸런스 툴 제작
 - 넷마블 메모리 보안 모듈 적용
@@ -65,11 +65,11 @@
  
 # Personal Experience & Projects
 ##### 어플리케이션 제작 및 T store 배포
-![](https://github.com/ez8801/Portfolio/blob/main/img/personal_exp_01.png)
+![](img/personal_exp_01.png)
 
 ##### 학생회 홈페이지 제작
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/personal_exp_02.png)
+![](img/personal_exp_02.png)
 
 node.js, EXPRESS, Jade 활용
 
@@ -99,7 +99,7 @@ curl
 --data-binary "{\"body\":\"$JOB_NAME v${APP_VERSION} r${REVISION} Build Started. \"}"
 ```
 
-![](https://github.com/ez8801/Portfolio/blob/main/img/jenkins_webhook_01.PNG)
+![](img/jenkins_webhook_01.PNG)
 
 > Note: 젠킨스 원격 빌드을 이용하면 메신저에서 클릭 한번 만으로 후속조치(ex) 배포)를 할 수 있다. 
 > 
