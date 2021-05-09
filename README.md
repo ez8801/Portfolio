@@ -119,7 +119,7 @@ Unity3d를 batchmode로 실행, 인자를 전달하여 옵션을 조절할 수 �
 
 e.g) Android Extension File(*.obb)에 사용되는 unity.build-id 값
 
-```
+```cs
 [UnityEditor.MenuItem("Build/Restore Unity Build Id")]
 private static void RestoreUnityBuildId()
 {
@@ -198,7 +198,7 @@ cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${A
 
 특정 키로 추출된 다이제스트를 파일 끝에 붙여 파일 변조 여부를 판단
 
-```
+```cs
 // Export
 public void ExportBytes(string bytesFilePath)
 {
@@ -273,8 +273,12 @@ private bool IsValid()
 
 ### Bundle Manifest Window
 
-![](img/tool_assetbundlemanifest.PNG)
+번들간 관계, 포함하고 있는 어셋목록 등을 볼 수 있는 
+
+![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
 
 ### Dependency Tool
 
-![](img/tool_dependency.png)
+Asset(Material, Texture, Prefab ...)의 디펜던시 체크
+
+![Asset(Material, Texture, Prefab ...)의 디펜던시 체크](img/tool_dependency.png)
