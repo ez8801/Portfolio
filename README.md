@@ -3,38 +3,38 @@
 개발팀의 Yes Man, 백민우입니다.
 
 # About Me
-## Introduction
+### Introduction
 - 안녕하세요! 모바일 게임 클라이언트 개발자 백민우입니다.
 - 원칙과 직관을 따르는 **열정적인 중재자**(INFP-T)입니다.
 
-## Contact & Channel
+### Contact & Channel
 - Email | usd122@naver.com
 - Github | https://github.com/ez8801
 - Linkedin | https://www.linkedin.com/in/minwoo-baek-b9476756
 
 # Skills
-## Game Client
+### Game Client
 - C#, C++
 - Unity3d
 - WinForms
 
-## DevOps
+### DevOps
 - Jenkins
 
-## Native
+### Native
 - Java, Objective-C
 - Android, iOS
 
-## Collaboration
+### Collaboration
 - Trello, Asana
 - REDMINE, mantis
 - JANDI, Telegram
 
-## Version Control
+### Version Control
 - SVN
 
 # Work Experience & Projects
-## 게임빌 프로야구
+### 게임빌 프로야구
 - Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
 - Android App Bundle (*.aab), 에디터 및 OS 업데이트 대응
 - 패치 시스템에서부터 지속적 통합/배포 (CD/CI)를 자기학습하여 팀에 전파
@@ -45,13 +45,13 @@
 ![](img/bss_01.png)
 ![](img/bss_02.png)
 
-## The King Of Fighters All Stars
+### The King Of Fighters All Stars
 - 컨텐츠 제작
 ![] ()
 
 - Utils, Extension 제작
 
-## Knights of night
+### Knights of night
 - 각종 컨텐츠 구현
 ![](/img/kon_01.png)
 
@@ -69,7 +69,7 @@
 ### 어플리케이션 제작 및 T store 배포
 ![](img/personal_exp_01.png)
 
-## 학생회 홈페이지 제작
+### 학생회 홈페이지 제작
 
 ![](img/personal_exp_02.png)
 
@@ -77,19 +77,19 @@ node.js, EXPRESS, Jade 활용
 
 
 # Education
-## 한양대학교 응용시스템학과
+### 한양대학교 응용시스템학과
 - 3학년 과대표 1년 역임
-## 한국 콘텐츠 진흥원 - 차세대 게임 과정
+### 한국 콘텐츠 진흥원 - 차세대 게임 과정
 - 1년 교육 과정 수료
 - 성적 우수 국비 장학생 선발 카네기멜론대학 ETC 센터 연수 (2개월)
 
 # Certificate
-## 정보처리 기능사
+### 정보처리 기능사
 * 2011.03.07 취득
 
 # CD/CI
 
-## [JANDI](https://www.jandi.com/landing/) 커넥트 Incoming Webhook으로 외부 데이터를 잔디 메시지로 수신하기
+### [JANDI](https://www.jandi.com/landing/) 커넥트 Incoming Webhook으로 외부 데이터를 잔디 메시지로 수신하기
 
 메신저로 빌드 진행상황을 수신, 대응
 
@@ -107,7 +107,7 @@ curl
 > 
 > (깃털만큼의 귀찮음이라도 덜고 눈 깜박할 시간이라도 퇴근을 앞당기도록 하자.)
 
-## 플러그인, Shell 그리고 Unity 까지
+### 플러그인, Shell 그리고 Unity 까지
 
 Unity3d를 batchmode로 실행, 인자를 전달하여 옵션을 조절할 수 있다!
 
@@ -170,7 +170,7 @@ private static void RestoreUnityBuildId()
 }
 ```
 
-## Shell
+### Shell
 
 쉘이랑 Apk뽑고, 사이닝도하고 백업도 다 했어!
 
@@ -194,7 +194,7 @@ cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${A
 ```
 
 
-## 엑셀에서 바이너리 데이터로
+### 엑셀에서 바이너리 데이터로
 
 특정 키로 추출된 다이제스트를 파일 끝에 붙여 파일 변조 여부를 판단
 
@@ -271,10 +271,10 @@ private bool IsValid()
 ```
 
 
-## Bundle Manifest Window
+### Bundle Manifest Window
 
 ![](img/tool_assetbundlemanifest.PNG)
 
-#### Dependency Tool
+### Dependency Tool
 
 ![](img/tool_dependency.png)
