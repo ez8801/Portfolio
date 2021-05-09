@@ -174,7 +174,7 @@ private static void RestoreUnityBuildId()
 
 쉘이랑 Apk뽑고, 사이닝도하고 백업도 다 했어!
 
-```sh
+```bash
 ## Appguard
 java -jar appguard-cli-builder.jar -h -i ${UNSIGNED_APK_NAME}
 
@@ -273,7 +273,7 @@ private bool IsValid()
 
 ### Bundle Manifest Window
 
-번들간 관계, 포함하고 있는 어셋목록 등을 볼 수 있는 
+번들간 관계, 포함하고 있는 어셋목록 등을 확인할 수 있는 에디터
 
 ![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
 
