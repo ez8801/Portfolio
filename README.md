@@ -6,6 +6,7 @@
 ### Introduction
 - 안녕하세요! 모바일 게임 클라이언트 개발자 백민우입니다.
 - 원칙과 직관을 따르는 **열정적인 중재자**(INFP-T)입니다.
+- 생산성 향상, 워크플로우에 대한 고민과 토론을 즐깁니다.
 
 ### Contact & Channel
 - Email | usd122@naver.com
@@ -15,7 +16,7 @@
 # Skills
 ### Game Client
 - C#, C++
-- Unity3d
+- Unity3d, UniRx
 - WinForms
 
 ### DevOps
@@ -35,35 +36,30 @@
 
 # Work Experience & Projects
 ### 게임빌 프로야구
-- Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
-- Android App Bundle (*.aab), 에디터 및 OS 업데이트 대응
-- 패치 시스템에서부터 지속적 통합/배포 (CD/CI)를 자기학습하여 팀에 전파
-![](img/jenkins_01.PNG)
-
-
 - 각종 컨텐츠 구현
+- Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
+- APK, IPA, Android App Bundle (*.aab) 릴리즈
+- CD/CI
+- Unity3d 에디터 및 iOS/Android OS 업데이트 대응
+
 ![](img/bss_01.png)
 ![](img/bss_02.png)
 
 ### The King Of Fighters All Stars
 - 컨텐츠 제작
-![] ()
-
 - Utils, Extension 제작
+
+![] ()
 
 ### Knights of night
 - 각종 컨텐츠 구현
-![](/img/kon_01.png)
-
 - 밸런스 툴 제작
 - 넷마블 메모리 보안 모듈 적용
 - Debug Monitor
 
-![](/img/tool_console.png)
-
-- 밸런스 툴 제작
-
-![](img/tool_balance.png)
+![컨텐츠 제작](/img/kon_01.png)
+![디버그 콘솔](/img/tool_console.png)
+![밸런스 툴](img/tool_balance.png)
  
 # Personal Experience & Projects
 ### 어플리케이션 제작 및 T store 배포
@@ -87,13 +83,15 @@ node.js, EXPRESS, Jade 활용
 ### 정보처리 기능사
 * 2011.03.07 취득
 
-# CD/CI
+# Details
+## CD/CI
 
-
+![](img/jenkins_00.PNG)
+![](img/jenkins_01.PNG)
 
 ### [JANDI](https://www.jandi.com/landing/) 커넥트 Incoming Webhook으로 외부 데이터를 잔디 메시지로 수신하기
 
-메신저로 빌드 진행상황을 수신, 대응
+메신저로 빌드 진행상황을 수신, 빠르게 이슈에 대응이 가능하다
 
 ```sh
 curl
@@ -174,8 +172,6 @@ private static void RestoreUnityBuildId()
 
 ### Shell
 
-쉘이랑 Apk뽑고, 사이닝도하고 백업도 다 했어!
-
 ```bash
 ## Appguard
 java -jar appguard-cli-builder.jar -h -i ${UNSIGNED_APK_NAME}
@@ -195,8 +191,7 @@ mkdir -p ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive
 cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${APK_NAME}
 ```
 
-
-### 엑셀에서 바이너리 데이터로
+## 엑셀에서 바이너리 데이터로
 
 특정 키로 추출된 다이제스트를 파일 끝에 붙여 파일 변조 여부를 판단
 
@@ -273,13 +268,13 @@ private bool IsValid()
 ```
 
 
-### Bundle Manifest Window
+## Bundle Manifest Window
 
 번들간 관계, 포함하고 있는 어셋목록 등을 확인할 수 있는 에디터
 
 ![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
 
-### Dependency Tool
+## Dependency Tool
 
 Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 
