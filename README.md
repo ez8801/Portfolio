@@ -39,7 +39,7 @@
 - ProudNet(학습중)
 - UniRx(학습중)
 
-# Work Experience & Projects
+# Projects
 ### 게임빌 프로야구
 - 각종 컨텐츠 구현
 - Unity AssetBundle, Android Expansion File (*.obb) 등을 이용 패치 시스템 구현
@@ -54,7 +54,8 @@
 - 성장 컨텐츠 제작
 - Utils, Extension 제작
 
-![] ()
+![] (img/kof_01.png)
+![디버그 콘솔](/img/tool_console.png)
 
 ### Knights of night
 - 각종 컨텐츠 구현
@@ -63,7 +64,6 @@
 - 로그 뷰어/패킷 모니터 제작
 
 ![컨텐츠 제작](/img/kon_01.png)
-![디버그 콘솔](/img/tool_console.png)
 ![밸런스 툴](img/tool_balance.png)
 
 ### GEOPIA
@@ -71,34 +71,36 @@
 - C2DM, APNS Notification구현
 - 광고, 결제 및 써드파티 모듈 적용
 - php, mysql를 활용 간단한 조회 페이지 구현
- 
-# Personal Experience & Projects
-### 어플리케이션 제작 및 T store 배포
-![](img/personal_exp_01.png)
-
-### 학생회 홈페이지 제작
-
-![](img/personal_exp_02.png)
-
-node.js, EXPRESS, Jade 활용
 
 # Education
-### 한양대학교 응용시스템학과
+### 한양대학교 응용시스템학과 (졸업)
 - 3학년 과대표
-### 한국 콘텐츠 진흥원 - 차세대 게임 과정
+### 한국 콘텐츠 진흥원 - 차세대 게임 과정 (수료)
 - 1년 교육 과정 수료
 - 성적 우수 국비 장학생 선발 카네기멜론대학 ETC 센터 연수 (2개월)
+### 울산대학교 기계자동차 공학부 (제적)
+### 울산 애니원 고등학교 컴퓨터 게임개발 학과 (졸업)
+- C언어, WinAPI, DirectX, 3d Max 등 학습
 
-# Certificate
+# Certificate / License
 ### 정보처리 기능사
 * 2011.03.07 취득
 
-# Details
+### 2종 보통 운전면허
+* 2018.08.27 취득
+* (운전하는 것을 즐깁니다. 출장때 불러주십시오)
+* (1종으로 다시 따고 싶습니다)
+
+# Military Service
+### 산업기능요원 복무
+* 2011.03 ~ 14. 01 (GEOPIA > 넷마블 블루)
+
+# Work Experience
 ## Jenkins
 
 평소 관심이 있었던 빌드 자동화. 
 업무를 마친 후 남는 시간, 퇴근 후 시간을 할애하여 리서치와 시행착오를 반복한 끝에
-문외한에서 빌드 담당자가 될 수 있었다.
+문외한에서 빌드 담당자가 됨.
 
 ### 빌드 개선 사례1
 
@@ -309,3 +311,13 @@ private bool IsValid()
 Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 
 ![Asset(Material, Texture, Prefab ...)의 디펜던시 체크](img/tool_dependency.png)
+
+# Personal Experience & Projects
+### 어플리케이션 제작 및 T store 배포
+![](img/personal_exp_01.png)
+
+### 학생회 홈페이지 제작
+
+![](img/personal_exp_02.png)
+
+node.js, EXPRESS, Jade 활용
