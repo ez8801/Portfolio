@@ -133,18 +133,14 @@ curl
 ### obb 오류
 
 * 문제: Apk파일과 obb파일의 unity.build-id가 맞지 않아 obb 파일이 인식되지 않는 현상
-* 원인: AndroidManifest 설정을 유지하기 위해서 컴파일 후 엎어치는 과정에서 unity.build-id가 소실
-* 해결: unity.build-id
-
-Unity3d를 batchmode로 실행, 인자를 전달하여 옵션을 조절할 수 있다!
+* 원인: AndroidManifest 설정을 유지하기 위해서 Android Project Export한 후 Manifest파일을 엎어치는 과정에서 unity.build-id가 소실
+* 해결: Android Project Export > unity.build-id 백업 > AndroidManifest overwrite > unity.build-id 복원
 
 ```sh
 -quit -batchmode -projectPath "$WORKSPACE" -logFile "$WORKSPACE/log.log" -executeMethod ProjectBuilder.Build() -version $APP_VERSION -revision $REVISION -symbols $DEFINE_SYMBOLS
 ```
 
-대부분의 설정은  유지 일부 설정은 
-
-e.g) Android Extension File(*.obb)에 사용되는 unity.build-id 값
+> Unity3d를 batchmode로 실행하여서 특정 Method를 호출하는 식으로 작업
 
 ```cs
 [UnityEditor.MenuItem("Build/Restore Unity Build Id")]
@@ -197,7 +193,11 @@ private static void RestoreUnityBuildId()
 }
 ```
 
-### Shell
+### 릴리즈 이슈
+
+* 문제: Android Studio에서 빌드하던 것에서 다양한 요구사항 반영 필요 
+* 해결: Command line tool을 이용 빌드 시스템 커스텀화
+* 결과: 앱 서명, 난독화 솔루션 적용, zipalign, Android App Bundle (*.aab) 등 다양한 릴리즈 상황 대응
 
 ```bash
 ## Appguard
@@ -218,9 +218,10 @@ mkdir -p ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive
 cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${APK_NAME}
 ```
 
-## 엑셀에서 바이너리 데이터로
+### 엑셀에서 바이너리 데이터로
 
-특정 키로 추출된 다이제스트를 파일 끝에 붙여 파일 변조 여부를 판단
+* 문제: 빌드 혹은 패치파일 내 파일들의 보안 이슈
+* 해결: 특정 키로 추출된 다이제스트를 파일 끝에 붙여, 파일 로드 시에 계산된 Hash값과 첨부된 다이제스트를 비교 파일 변조 여부를 판단
 
 ```cs
 // Export
@@ -295,13 +296,15 @@ private bool IsValid()
 ```
 
 
-## Bundle Manifest Window
+### 어셋번들 종속성 이슈
+
+* 문제: 어셋번들간 얽힌 종속성으로 인해 어셋번들 로드 시, 종속성을 가진 어셋번들을 다수 로드해야 하는 현상 + 관리 측면 이슈
+* 연구: 어셋번들 압축 방식 연구, 관리 측면에 대한 고민
+* 결과: 어셋번들에서 어셋을 로드할 때, 일부 Chunk만 읽어와 사용할 수 있는 LZ4(청크 기반 압축) 방식 적용, 어셋 번들 관리에 필요한 에디터 다수 제작
 
 번들간 관계, 포함하고 있는 어셋목록 등을 확인할 수 있는 에디터
 
 ![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
-
-## Dependency Tool
 
 Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 
