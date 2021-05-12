@@ -63,8 +63,8 @@
 - 넷마블 메모리 보안 모듈 적용
 - 로그 뷰어/패킷 모니터 제작
 
-![컨텐츠 제작](/img/kon_01.PNG)
-![밸런스 툴](img/tool_balance.png)
+![](/img/kon_01.PNG)
+![](img/tool_balance.png)
 
 ### GEOPIA
 - Android/iOS API, Java/objective-c를 활용 어플리케이션 제작
@@ -85,11 +85,6 @@
 # Certificate / License
 ### 정보처리 기능사
 * 2011.03.07 취득
-
-### 2종 보통 운전면허
-* 2018.08.27 취득
-* (운전하는 것을 즐깁니다. 출장때 불러주십시오)
-* (1종으로 다시 따고 싶습니다)
 
 # Military Service
 ### 산업기능요원 복무
@@ -220,7 +215,7 @@ mkdir -p ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive
 cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${APK_NAME}
 ```
 
-### 엑셀에서 바이너리 데이터로
+### 앱내 포함되는 데이터 혹은 DLC 보안 이슈
 
 * 문제: 빌드 혹은 패치파일 내 파일들의 보안 이슈
 * 해결: 특정 키로 추출된 다이제스트를 파일 끝에 붙여, 파일 로드 시에 계산된 Hash값과 첨부된 다이제스트를 비교 파일 변조 여부를 판단
