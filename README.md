@@ -63,7 +63,7 @@
 - 넷마블 메모리 보안 모듈 적용
 - 로그 뷰어/패킷 모니터 제작
 
-![컨텐츠 제작](/img/kon_01.png)
+![컨텐츠 제작](/img/kon_01.PNG)
 ![밸런스 툴](img/tool_balance.png)
 
 ### GEOPIA
