@@ -54,7 +54,7 @@
 - 성장 컨텐츠 제작
 - Utils, Extension 제작
 
-![] (img/kof_01.png)
+![](img/kof_01.png)
 ![디버그 콘솔](/img/tool_console.png)
 
 ### Knights of night
