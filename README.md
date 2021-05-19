@@ -40,7 +40,7 @@
 - UniRx(학습중)
 
 # Projects
-### 게임빌 프로야구
+### 게임빌 프로야구 (2017. 5 ~ 2021. 3)
 #### 각종 컨텐츠 기능 구현 및 설계
 - 선수육성 컨텐츠 및 고도화작업 (훈련, 트레이너 능력 등 각종 버프 반영, 시즌미션)
 - 시나리오별 전용 컨텐츠 다수
@@ -63,7 +63,7 @@
 ![](img/bss_01.png)
 ![](img/bss_02.png)
 
-### The King Of Fighters All Stars
+### The King Of Fighters All Stars (2016. 11 ~ 2017. 3)
 - 성장 컨텐츠 제작 (캐릭터 일람/상세정보/편성/강화/진화/한계돌파/스킬 장착/능력치 산정 및 표시)
 - 스킬 미리보기 기능 구현
 - 컨텐츠, 스킬 해금
@@ -72,7 +72,7 @@
 ![](img/kof_01.jpg)
 ![디버그 콘솔](/img/tool_console.png)
 
-### Knights of night
+### Knights of night (2012. 7 ~ 2016. 11)
 #### 컨텐츠 기능 구현 및 설계
 - 아이템, 룬 강화/합성/진화/초월/재련/초월합성/변형
 - 퀘스트/업적/미션/복귀자/빙고미션
@@ -89,7 +89,7 @@
 ![](img/kon_01.png)
 ![](img/tool_balance.png)
 
-### GEOPIA
+### GEOPIA (2011. 2 ~ 2012. 7)
 - Android/iOS API, Java/objective-c를 활용 어플리케이션 제작
 - C2DM, APNS Notification구현
 - 광고, 결제 및 써드파티 모듈 적용
