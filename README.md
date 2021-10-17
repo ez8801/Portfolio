@@ -1,4 +1,4 @@
-![ThumbNail](https://media-exp1.licdn.com/dms/image/C5103AQEaUrgBF7L11Q/profile-displayphoto-shrink_200_200/0/1516934464463?e=1625702400&v=beta&t=y3EmG0vFd04BBAtEjwWtAYAACzvZ34lG182QhiMxweo)
+![ThumbNail](img/profile.png)
 
 개발팀의 Yes Man, 백민우입니다.
 
