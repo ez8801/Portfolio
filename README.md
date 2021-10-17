@@ -1,4 +1,4 @@
-![](img/profile.jpg)
+![](img/profile.jpg){: width="100" height="100"}
 
 개발팀의 Yes Man, 백민우입니다.
 
