@@ -1,4 +1,4 @@
-![ThumbNail](img/profile.png)
+![](img/profile.jpg)
 
 개발팀의 Yes Man, 백민우입니다.
 
