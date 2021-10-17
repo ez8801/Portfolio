@@ -40,18 +40,14 @@ Minwoo Baek
 # Projects
 ### Gamevil Baseball super stars (2017. 5 ~ 2021. 3)
 #### Implemented new features
-- 선수육성 컨텐츠 및 고도화작업 (훈련, 트레이너 능력 등 각종 버프 반영, 시즌미션)
-- 시나리오별 전용 컨텐츠 다수
-- 선수육성 자동진행 작업
-- 신규유저용 가이드 미션 (선수 육성 길잡이)
-- 미션, 업적 기반 작업
-- 슈퍼스타리그 아웃게임 부분 (비동기 PVP 랭킹 컨텐츠)
-- 이벤트/공지 배너, 구단주 스케쥴 (컨텐츠 진행 현황), 로딩팁
+- Auto Play
+- Mission/Achievement/Guide
+- Event Banner, Loading tip
 
 #### ETC
 - Designed and implemented a DLC system using Unity AssetBundle, Android Expansion File (*.obb)
 - CD/CI (Remote Build, Notification, Daily Build)
-- Unity3d Editor 및 iOS/Android OS 업데이트 대응
+- Applied new Unity3d/Android/iOS version
 - Support Android App Bundle (*.aab)
 - Optimize Asset Loading
 - Assisted server refactoring and packet optimization
@@ -67,7 +63,7 @@ Minwoo Baek
 - Developed Utils, Extension
 
 ![](img/kof_01.jpg)
-![디버그 콘솔](/img/tool_console.png)
+![Debug Console](/img/tool_console.png)
 
 ### Knights of night (2012. 7 ~ 2016. 11)
 #### Implemented new features
@@ -115,15 +111,15 @@ Minwoo Baek
 업무를 마치고 남는 시간, 퇴근 후 시간을 할애하여 리서치와 시행착오를 반복한 끝에
 문외한에서 빌드 담당자가 됨.
 
-### 빌드 개선 사례1
+### Build improvement case 1
 
 * Problem: 빌드 및 배포 과정이 하나로 구성되어 빌드의 현황과 이슈 발생 시 확인이 어려운 이슈
-* Research: groovy 스크립트, 파이프라인 학습
-* Solution: 각 빌드 과정을 쪼개고, groovy 스크립트로 파이프라인을 구성
+* Research: groovy script and pipeline study
+* Solution: Configure pipeline using groovy script
 * Result: 빌드 진행 현황을 파악하기 쉬워졌고, 이슈 발생 시 실패한 Node를 중점적으로 파악하여 이슈 확인이 용이해짐
 ![](img/jenkins_01.PNG)
 
-### 빌드 개선 사례2
+### Build improvement case 2
 
 * Problem: 젠킨스 권한이 없는 인원은 여전히 빌드 현황을 파악할 수 없는 문제 + 빌드 난이도 문제
 * Research: [JANDI](https://www.jandi.com/landing/) 커넥트 기능과 Webhook, 젠킨스 원격빌드 연구
@@ -145,7 +141,7 @@ curl
 > 
 > (깃털만큼의 귀찮음이라도 덜고 눈 깜박할 시간이라도 퇴근을 앞당기도록 하자.)
 
-### obb 오류
+### obb error
 
 * Problem: Apk파일과 obb파일의 unity.build-id가 맞지 않아 obb 파일이 인식되지 않는 현상
 * Cause: AndroidManifest 설정을 유지하기 위해서 Android Project Export한 후 Manifest파일을 엎어치는 과정에서 unity.build-id가 소실
@@ -212,7 +208,7 @@ private static void RestoreUnityBuildId()
 
 * Problem: Android Studio에서 빌드하던 것에서 다양한 요구사항 반영 필요 
 * Solution: Customize Build system using command line tools
-* Result: Sign App, 난독화 솔루션 적용, zipalign, Android App Bundle (*.aab) 등 다양한 릴리즈 상황 대응
+* Result: Sign App, Apply Obfuscation Solution, zipalign, Support Android App Bundle (*.aab)
 
 ```bash
 ## Appguard
@@ -321,9 +317,9 @@ private bool IsValid()
 
 ![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
 
-Asset(Material, Texture, Prefab ...)의 디펜던시 체크
+Check Asset(Material, Texture, Prefab ...)'s Dependency
 
-![Asset(Material, Texture, Prefab ...)의 디펜던시 체크](img/tool_dependency.png)
+![](img/tool_dependency.png)
 
 # Personal Experience & Projects
 ### Develop application and publish to store
