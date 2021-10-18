@@ -113,19 +113,18 @@ Minwoo Baek
 
 ### Build improvement case 1
 
-* Problem: 빌드 및 배포 과정이 하나로 구성되어 빌드의 현황과 이슈 발생 시 확인이 어려운 이슈
+* Problem: The build and distribution integrated and configured as one step. Difficulty checking the current status and errors of the building.
 * Research: groovy script and pipeline study
 * Solution: Configure pipeline using groovy script
-* Result: 빌드 진행 현황을 파악하기 쉬워졌고, 이슈 발생 시 실패한 Node를 중점적으로 파악하여 이슈 확인이 용이해짐
+* Result: It's easier to understand the progress of the build, When an issue occurs, focus on identifying the failed node.
 ![](img/jenkins_01.PNG)
 
 ### Build improvement case 2
 
-* Problem: 젠킨스 권한이 없는 인원은 여전히 빌드 현황을 파악할 수 없는 문제 + 빌드 난이도 문제
-* Research: [JANDI](https://www.jandi.com/landing/) 커넥트 기능과 Webhook, 젠킨스 원격빌드 연구
-* Solution: [JANDI](https://www.jandi.com/landing/) 커넥트 기능과 Webhook, 젠킨스 원격빌드 적용
-* 빌드 현황 [JANDI](https://www.jandi.com/landing/) 메시지 수신 및 젠킨스 원격빌드 연동
-* Result: 메신저로 빌드 진행상황을 수신, 빠르게 이슈에 대응 / 원격빌드 연동
+* Problem: The veiled build status
+* Research: [JANDI](https://www.jandi.com/landing/) Connect functions and webhook, jenkins remote build study
+* Solution: [JANDI](https://www.jandi.com/landing/) Connect functions and webhook, jenkins remote build apply
+* Result: Implemented Messenger Notifications and remote build. 
 
 ```sh
 curl
@@ -137,21 +136,19 @@ curl
 
 ![](img/jenkins_webhook_01.PNG)
 
-> Note: 젠킨스 원격 빌드을 이용하면 메신저에서 클릭 한번 만으로 후속조치(ex) 배포)를 할 수 있다. 
-> 
-> (깃털만큼의 귀찮음이라도 덜고 눈 깜박할 시간이라도 퇴근을 앞당기도록 하자.)
+> Note: It's possible to run remote build just one click. (ex) distribution)
 
 ### obb error
 
-* Problem: Apk파일과 obb파일의 unity.build-id가 맞지 않아 obb 파일이 인식되지 않는 현상
-* Cause: AndroidManifest 설정을 유지하기 위해서 Android Project Export한 후 Manifest파일을 엎어치는 과정에서 unity.build-id가 소실
-* Solution: Android Project Export > unity.build-id 백업 > AndroidManifest overwrite > unity.build-id 복원
+* Problem: a Mismatch between APK's build-id and OBB file's build-id. obb system does not work.
+* Cause: Build-id is lost in the process of overwriting the Manifest file after Android Project export.
+* Solution: Android Project export > unity.build-id back up > AndroidManifest overwrite > unity.build-id restore
 
 ```sh
 -quit -batchmode -projectPath "$WORKSPACE" -logFile "$WORKSPACE/log.log" -executeMethod ProjectBuilder.Build() -version $APP_VERSION -revision $REVISION -symbols $DEFINE_SYMBOLS
 ```
 
-> Unity3d를 batchmode로 실행하여서 특정 Method를 호출하는 식으로 작업
+> Run Unity3d in batch mode to call a specific method.
 
 ```cs
 [UnityEditor.MenuItem("Build/Restore Unity Build Id")]
@@ -204,9 +201,9 @@ private static void RestoreUnityBuildId()
 }
 ```
 
-### 릴리즈 이슈
+### Various build specs
 
-* Problem: Android Studio에서 빌드하던 것에서 다양한 요구사항 반영 필요 
+* Problem: Cannot handle various build specifications.
 * Solution: Customize Build system using command line tools
 * Result: Sign App, Apply Obfuscation Solution, zipalign, Support Android App Bundle (*.aab)
 
@@ -229,9 +226,9 @@ mkdir -p ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive
 cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${APK_NAME}
 ```
 
-### 앱내 포함되는 데이터 혹은 DLC 보안 이슈
+### DLC Security Issue
 
-* Problem: 빌드 혹은 패치파일 내 파일들의 보안 이슈
+* Problem: DLC Security Issue
 * Solution: 특정 키로 추출된 다이제스트를 파일 끝에 붙여, 파일 로드 시에 계산된 Hash값과 첨부된 다이제스트를 비교 파일 변조 여부를 판단
 
 ```cs
@@ -309,11 +306,11 @@ private bool IsValid()
 
 ### Asset Bundle Dependency Issue
 
-* Problem: 어셋번들간 얽힌 종속성으로 인해 어셋번들 로드 시, 종속성을 가진 어셋번들을 다수 로드해야 하는 현상 + 관리 측면 이슈
-* Research: 어셋번들 압축 방식 연구, 관리 측면에 대한 고민
-* Result: 어셋번들에서 어셋을 로드할 때, 일부 Chunk만 읽어와 사용할 수 있는 LZ4(청크 기반 압축) 방식 적용, 어셋 번들 관리에 필요한 에디터 다수 제작
+* Problem: The Spaghetti Asset Bundles
+* Research: Research AssetBundle Compression and manage side
+* Result: Applied LZ4(Chunk based compression) Compression, Developed AssetBundle Managing Custom Editors
 
-번들간 관계, 포함하고 있는 어셋목록 등을 확인할 수 있는 에디터
+The editor what can check the dependency between bundles
 
 ![AssetBundle Manifest Window](img/tool_assetbundlemanifest.PNG)
 
