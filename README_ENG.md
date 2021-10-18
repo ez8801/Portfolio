@@ -39,12 +39,7 @@ Minwoo Baek
 
 # Projects
 ### Gamevil Baseball super stars (2017. 5 ~ 2021. 3)
-#### Implemented new features
-- Auto Play
-- Mission/Achievement/Guide
-- Event Banner, Loading tip
-
-#### ETC
+- Implemented new features. Such as Mission, Auto Play, Event Banner, Loading tip and various contents
 - Designed and implemented a DLC system using Unity AssetBundle, Android Expansion File (*.obb)
 - CD/CI (Remote Build, Notification, Daily Build)
 - Applied new Unity3d/Android/iOS version
@@ -58,23 +53,16 @@ Minwoo Baek
 ![](img/bss_02.png)
 
 ### The King Of Fighters All Stars (2016. 11 ~ 2017. 3)
-- Implemented new features
-- Level Contents (Characters, Skills, Stats)
+- Implemented new features about level contents (Characters, Skills, Stats)
 - Developed Utils, Extension
 
 ![](img/kof_01.jpg)
 ![Debug Console](/img/tool_console.png)
 
 ### Knights of night (2012. 7 ~ 2016. 11)
-#### Implemented new features
-- Item, Rune System
-- Quest/Achiement/Mission System
-- Stats, Buff/Debuff System
-- Monster Skill/AI
-- Automatic play
-
-#### ETC
+- Implemented new features about level contents and outgame (Item System, Quest System, Stats/Buff/Debuff System, Automatic Play)
 - Applied in-house modules (Memory security, Ranking)
+- Developed WebClient
 - Developed Log Viewer, Packet Monitor
 
 ![](img/kon_01.png)
