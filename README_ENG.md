@@ -5,7 +5,7 @@ Minwoo Baek
 # About Me
 ### Introduction
 - Hi! I'm Minwoo Baek, I work as a Unity3d developer at a game developer.
-- I am interested in productivity improvement, workflow, and enjoy discussions.
+- I'm interested in productivity improvement, workflow, and enjoy discussions.
 
 ### Contact & Channel
 - Email | usd122@naver.com
