@@ -75,18 +75,16 @@ Minwoo Baek
 - Developed API using php, mysql
 
 # Education
-### Hanyang Univ, Applied System (졸업)
-- 3학년 과대표
-### Korea Creative Content Agency - Program (수료)
-- 1년 교육 과정 수료
-- 성적 우수 국비 장학생 선발 카네기멜론대학 ETC 센터 연수 (2개월)
-### Ulsan Univ, Mechanical and Automotive Engineering (제적)
-### Ulsan Anione High School, Department of Computer Games (졸업)
+### Hanyang Univ, Applied System (Graduated)
+- The Departmental student representative
+### Korea Creative Content Agency - Program (Completed)
+### Ulsan Univ, Mechanical and Automotive Engineering
+### Ulsan Anione High School, Department of Computer Games (Graduated)
 - C, WinAPI, DirectX, 3d Max
 
 # Certificate / License
-### 정보처리 기능사
-* 2011.03.07 취득
+### Craftsman Information Processing
+* 2011.03.07
 
 # Military Service
 ### Serving as Skilled Industrial Personnel
@@ -94,11 +92,6 @@ Minwoo Baek
 
 # Work Experience
 ## Jenkins
-
-담당 업무는 아니었지만 평소 관심이 있었던 빌드 자동화. 
-업무를 마치고 남는 시간, 퇴근 후 시간을 할애하여 리서치와 시행착오를 반복한 끝에
-문외한에서 빌드 담당자가 됨.
-
 ### Build improvement case 1
 
 * Problem: The build and distribution integrated and configured as one step. Difficulty checking the current status and errors of the building.
@@ -217,7 +210,7 @@ cp ${APK_NAME} ${JENKINS_HOME}/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/archive/${A
 ### DLC Security Issue
 
 * Problem: DLC Security Issue
-* Solution: 특정 키로 추출된 다이제스트를 파일 끝에 붙여, 파일 로드 시에 계산된 Hash값과 첨부된 다이제스트를 비교 파일 변조 여부를 판단
+* Solution: Attach the digest extracted with a specific key to the end of the file. If the Hash value is invalid when loading the file, it throw an error.
 
 ```cs
 // Export
