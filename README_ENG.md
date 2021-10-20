@@ -1,5 +1,4 @@
-![ThumbNail](img/profile.jpg)
-
+<img src="https://github.com/ez8801/Portfolio/blob/main/img/profile.jpg" width="128">
 Minwoo Baek
 
 # About Me
