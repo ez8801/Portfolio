@@ -1,4 +1,4 @@
-![](img/profile.jpg)
+<img src="https://github.com/ez8801/Portfolio/blob/main/img/profile.jpg" width="128">
 
 개발팀의 Yes Man, 백민우입니다.
 
