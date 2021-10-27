@@ -14,7 +14,7 @@ Minwoo Baek
 # Skills
 ### Game Client
 - C#, C++
-- Unity3d, UniRx
+- Unity3d
 - WinForms
 
 ### DevOps
