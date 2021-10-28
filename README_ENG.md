@@ -51,7 +51,7 @@ Minwoo Baek
 
 ![](img/bss_01.png)
 ![](img/bss_02.png)
-![](img/DataTool.PNG)
+![](img/tool_data.png)
 
 ### The King Of Fighters All Stars (2016. 11 ~ 2017. 3)
 - Implemented new features about level contents (Characters, Skills, Stats)
