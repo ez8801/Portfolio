@@ -21,6 +21,7 @@
 
 ### DevOps
 - Jenkins
+- App Center
 
 ### Native
 - Java, Objective-C
@@ -34,13 +35,39 @@
 ### Version Control
 - SVN
 
+### Engine
+- Photon Quantum
+
+### Third Party Plugin
+- Bugsnag
+- Firebase Analytics
+- GPGS
+- Apple Login
+- Facebook
+
 ### Interests
 - node.js(토이프로젝트 경험), Electron
 - ProudNet(학습중)
 - UniRx(학습중)
 
 # Projects
-### 게임빌 프로야구 (2017. 5 ~ 2021. 3)
+### 빌런즈 (2021. 7 ~ 2022. 7)
+#### 각종 컨텐츠 구현
+- 이모티콘
+- AI 플레이어
+- 친구, 팀 구성 등 커뮤니티 기능
+- 인 게임 기획 내용, 피드백 및 편의성, 퍼포먼스 개선 작업
+
+#### 시스템
+- Addressable 시스템을 이용한 어셋 로드 및 패치 시스템 구현
+- CI/CD 구축, 담당 (원격빌드, 빌드알림, 주기적빌드, 앱센터 연동)
+- 기획 데이터 추출 툴 제작 (Enum, 배열 등 다양한 타입 지원 / 퀀텀 엔진 대응)
+- 패킷 모니터 제작
+- 퍼블리셔 SDK 적용 (애플/구글/페이스북 로그인, Bugsnag, Anlytics, Firebase 등)
+- 메시지 팩 적용
+- SuperSocket을 이용한 소켓 연동
+
+### 게임빌 프로야구 (2017. 5 ~ 2021. 6)
 #### 각종 컨텐츠 기능 구현 및 설계
 - 선수육성 컨텐츠 및 고도화작업 (훈련, 트레이너 능력 등 각종 버프 반영, 시즌미션)
 - 시나리오별 전용 컨텐츠 다수
