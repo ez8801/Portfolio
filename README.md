@@ -360,6 +360,30 @@ Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 
 ![Asset(Material, Texture, Prefab ...)의 디펜던시 체크](img/tool_dependency.png)
 
+## 툴 제작
+### 데이터 툴 및 바이너리 파일 포맷 제작
+엑셀 형태의 기획/테이블 데이터를 제작한 바이너리 포맷으로 변환해주는 툴 제작
+
+- 엑셀 데이터를 바이너리 데이터로 변환
+- 데이터 오브젝트 클래스와 Deserialize 코드를 자동생성
+- ScriptableObject, Enum 등 지원
+- 데이터 변조방지
+
+![](img/tool_data_unity.PNG)
+
+### 패킷 모니터
+서버/클라이언트 파트뿐 아니라 에디터 환경에서의 버그나 이슈와 같은 특정 상황에서의 패킷 Request/Response 값을 간편하게 복사하고 
+의사소통할 수 있는 툴 제작
+
+![](img/tool_packet_monitor.PNG)
+
+## 문서화
+각종 가이드, 이슈 대응방법 및 히스토리 관리를 용이하게 하기 위한 꾸준한 문서 작성
+
+![](img/docu_01.PNG)
+![](img/docu_02.PNG)
+
+
 # Personal Experience & Projects
 ### 어플리케이션 제작 및 T store 배포
 ![](img/personal_exp_01.png)
