@@ -67,8 +67,8 @@
 - 메시지 팩 적용
 - SuperSocket을 이용한 소켓 연동
 
-![](img/villains_battle.png)
-![](img/villains_end.png)
+![](img/villains_battle.PNG)
+![](img/villains_end.PNG)
 
 ### 게임빌 프로야구 (2017. 5 ~ 2021. 6)
 #### 각종 컨텐츠 기능 구현 및 설계
