@@ -29,12 +29,13 @@
 - Android, iOS
 
 ### Collaboration
-- Trello, Asana
+- Trello, Asana, Jira
 - REDMINE, mantis
-- JANDI, Telegram
+- JANDI, Telegram, Naver works
+- Confluence
 
 ### Version Control
-- SVN
+- SVN, Github
 
 ### Engine
 - Photon Quantum
@@ -62,7 +63,7 @@
 #### 시스템
 - Addressable 시스템을 이용한 어셋 로드 및 패치 시스템 구현
 - CI/CD 구축, 담당 (원격빌드, 빌드알림, 주기적빌드, 앱센터 연동)
-- 기획 데이터 추출 툴 제작 (Enum, 배열 등 다양한 타입 지원 / 퀀텀 엔진 대응)
+- 기획 데이터 추출 툴 제작 (Enum, 배열 등 다양한 타입 지원 / 퀀텀 엔진 대응 / 소스 자동생성)
 - 패킷 모니터 제작
 - 퍼블리셔 SDK 적용 (애플/구글/페이스북 로그인, Bugsnag, Anlytics, Firebase 등)
 - 메시지 팩 적용
