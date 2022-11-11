@@ -10,6 +10,7 @@ Minwoo Baek
 - Email | usd122@naver.com
 - Github | https://github.com/ez8801
 - Linkedin | https://www.linkedin.com/in/minwoo-baek-b9476756
+- Blog | https://blog.naver.com/usd122
 
 # Skills
 ### Game Client
@@ -25,12 +26,13 @@ Minwoo Baek
 - Android, iOS
 
 ### Collaboration
-- Trello, Asana
+- Trello, Asana, Jira
 - REDMINE, mantis
-- JANDI, Telegram
+- JANDI, Telegram, Naver works
+- Confluence
 
 ### Version Control
-- SVN
+- SVN, Github
 
 ### Interests
 - node.js(Toy Project), Electron
@@ -38,6 +40,17 @@ Minwoo Baek
 - UniRx(Prototyping)
 
 # Projects
+### Villains (2021. 7 ~ 2022. 7)
+- Implemented new features (In-Game Community Functions, AI Player...)
+- Designed and implemented a DLC system using Addressables Asset System
+- Made the build and deployment processes via jenkins, bash (Remote Build, Notification, Periodically Build)
+- (de)serialization via MessagePack
+- TCP communicated via SuperSocket
+- Integrated our project and publisher SDK (such as Apple/Google/Facebook Login, Bugsnag, Analytics, Firebase...)
+
+![](img/villains_battle.PNG)
+![](img/villains_end.PNG)
+
 ### Gamevil Baseball super stars (2017. 5 ~ 2021. 3)
 - Implemented new features. Such as Mission, Auto Play, Event Banner, Loading tip and various contents
 - Designed and implemented a DLC system using Unity AssetBundle, Android Expansion File (*.obb)
@@ -81,7 +94,6 @@ Minwoo Baek
 ### Korea Creative Content Agency - Program (Completed)
 ### Ulsan Univ, Mechanical and Automotive Engineering
 ### Ulsan Anione High School, Department of Computer Games (Graduated)
-- C, WinAPI, DirectX, 3d Max
 
 # Certificate / License
 ### Craftsman Information Processing
@@ -299,6 +311,26 @@ The editor what can check the dependency between bundles
 Check Asset(Material, Texture, Prefab ...)'s Dependency
 
 ![](img/tool_dependency.png)
+
+## Tools
+### Automatic Generate Source Code / SpreadSheet Convert Tooling
+- Designed Custom File Format
+- Automatic Generate Deserialization Source Code
+- Support Scriptable Object
+- Detecting Memory hack
+
+![](img/tool_data_unity.PNG)
+
+### Packet Monitor
+
+![](img/tool_packet_monitor.PNG)
+
+### Documentation
+
+Documented technical issues, specifications, history about project
+
+![](img/docu_01.PNG)
+![](img/docu_02.PNG)
 
 # Personal Experience & Projects
 ### Develop application and publish to store
