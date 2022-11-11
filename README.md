@@ -12,6 +12,7 @@
 - Email | usd122@naver.com
 - Github | https://github.com/ez8801
 - Linkedin | https://www.linkedin.com/in/minwoo-baek-b9476756
+- Blog | https://blog.naver.com/usd122
 
 # Skills
 ### Game Client
