@@ -52,32 +52,31 @@ Minwoo Baek
 ![](img/villains_end.PNG)
 
 ### Gamevil Baseball super stars (2017. 5 ~ 2021. 3)
-- Implemented new features. Such as Mission, Auto Play, Event Banner, Loading tip and various contents
+- Implemented new features. (Such as Mission, Automatic Play, Event Banner, Loading tip and various contents)
 - Designed and implemented a DLC system using Unity AssetBundle, Android Expansion File (*.obb)
 - CD/CI (Remote Build, Notification, Daily Build)
-- Applied new Unity3d/Android/iOS version
+- Unity3d/Android/iOS/MacOS Major updates and other small updates
 - Support Android App Bundle (*.aab)
 - Optimize Asset Loading
 - Assisted server refactoring and packet optimization
 - Packet Encryption
-- Applied a Social Platform (In-house module, called hive)
+- Integrated a Social Platform With our project (In-house module, called hive)
 
 ![](img/bss_01.png)
 ![](img/bss_02.png)
-![](img/tool_data.png)
 
 ### The King Of Fighters All Stars (2016. 11 ~ 2017. 3)
-- Implemented new features about level contents (Characters, Skills, Stats)
+- Implemented new features about level contents (Characters, Skills, Stats System)
 - Developed Utils, Extension
 
 ![](img/kof_01.jpg)
 ![Debug Console](/img/tool_console.png)
 
 ### Knights of night (2012. 7 ~ 2016. 11)
-- Implemented new features about level contents and outgame (Item System, Quest System, Stats/Buff/Debuff System, Automatic Play)
-- Applied in-house modules (Memory security, Ranking)
+- Implemented new features that game contents (Item System, Quest System, Stats/Buff/Debuff System, Automatic Play)
+- Integrated in-house modules (Memory security, Ranking)
 - Developed WebClient
-- Developed Log Viewer, Packet Monitor
+- Developed Log Console, Packet Monitor
 
 ![](img/kon_01.png)
 ![](img/tool_balance.png)
@@ -85,7 +84,7 @@ Minwoo Baek
 ### GEOPIA (2011. 2 ~ 2012. 7)
 - Developed Mobile Application using Android/iOS API, Java/objective-c
 - Implemented Notification using C2DM, APNS
-- Applied third party modules such as ad, payment.
+- Integrated third party modules (such as ad, payment)
 - Developed API using php, mysql
 
 # Education
