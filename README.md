@@ -17,7 +17,7 @@
 # Skills
 ### Game Client
 - C#, C++
-- Unity3d, UniRx
+- Unity3d, UniRx, UniTask
 - WinForms
 
 ### DevOps
@@ -50,7 +50,6 @@
 ### Interests
 - node.js(토이프로젝트 경험), Electron
 - ProudNet(학습중)
-- UniRx(학습중)
 
 # Projects
 ### 빌런즈 (2021. 7 ~ 2022. 7)
@@ -377,6 +376,18 @@ Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 의사소통할 수 있는 툴 제작
 
 ![](img/tool_packet_monitor.PNG)
+
+### 테이블 검증기
+
+테이블 데이터의 관계를 설정, 해당 데이터를 Test와 Addressable Analyze Rule로 검증
+![](img/sc_graph.PNG)
+
+![](img/sc_rule_and_test.PNG)
+
+### 스웨거 API 문서 뷰어 및 코드 생성
+
+패킷과 모델을 확인할 수 있고, 코드 생성
+![](img/sh_swagger.PNG)
 
 ## 문서화
 각종 가이드, 이슈 대응방법 및 히스토리 관리를 용이하게 하기 위한 꾸준한 문서 작성
