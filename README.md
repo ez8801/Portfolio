@@ -47,8 +47,13 @@
 - Apple Login
 - Facebook
 
+### Package
+- ZString
+- MemoryPack
+- Newtonsoft.Json
+
 ### Interests
-- node.js(토이프로젝트 경험), Electron
+- node.js(토이프로젝트 경험), Electron, Flutter
 - ProudNet(학습중)
 
 # Projects
@@ -65,7 +70,7 @@
 - 기획 데이터 추출 툴 제작 (Enum, 배열 등 다양한 타입 지원 / 퀀텀 엔진 대응 / 소스 자동생성)
 - 패킷 모니터 제작
 - 퍼블리셔 SDK 적용 (애플/구글/페이스북 로그인, Bugsnag, Anlytics, Firebase 등)
-- 메시지 팩 적용
+- MessagePack 적용
 - SuperSocket을 이용한 소켓 연동
 
 ![](img/villains_battle.PNG)
