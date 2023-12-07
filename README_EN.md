@@ -15,7 +15,7 @@ Minwoo Baek
 # Skills
 ### Game Client
 - C#, C++
-- Unity3d
+- Unity3d, UniRx, UniTask
 - WinForms
 
 ### DevOps
@@ -34,10 +34,20 @@ Minwoo Baek
 ### Version Control
 - SVN, Github
 
+### Engine
+- Photon Quantum
+
+### Third Party Plugin
+- Bugsnag
+- Firebase Analytics
+- GPGS
+- Apple Login
+- Facebook
+
 ### Interests
-- node.js(Toy Project), Electron
-- ProudNet(Prototyping)
-- UniRx(Prototyping)
+- node.js(Toy Project)
+- Electron, Flutter
+- ProudNet
 
 # Projects
 ### Villains (2021. 7 ~ 2022. 7)
@@ -323,6 +333,13 @@ Check Asset(Material, Texture, Prefab ...)'s Dependency
 ### Packet Monitor
 
 ![](img/tool_packet_monitor.PNG)
+
+### Table Verifier
+
+![](img/sc_graph.PNG)
+
+- Support TestRunner, Addressable Analyze Rule System
+![](img/sc_rule_and_test.PNG)
 
 ### Documentation
 
