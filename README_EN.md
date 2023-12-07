@@ -44,6 +44,11 @@ Minwoo Baek
 - Apple Login
 - Facebook
 
+### Package
+- ZString
+- MemoryPack
+- Newtonsoft.Json
+
 ### Interests
 - node.js(Toy Project)
 - Electron, Flutter
@@ -338,7 +343,7 @@ Check Asset(Material, Texture, Prefab ...)'s Dependency
 
 ![](img/sc_graph.PNG)
 
-- Support TestRunner, Addressable Analyze Rule System
+Support TestRunner, Addressable Analyze Rule System
 ![](img/sc_rule_and_test.PNG)
 
 ### Documentation
