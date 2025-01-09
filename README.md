@@ -34,6 +34,9 @@
 - JANDI, Telegram, Naver works
 - Confluence
 
+### Documentation
+- docFX
+
 ### Version Control
 - SVN, Github
 
@@ -400,6 +403,9 @@ Asset(Material, Texture, Prefab ...)의 디펜던시 체크
 
 ![](img/docu_01.PNG)
 ![](img/docu_02.PNG)
+
+docFX를 통해 프로젝트 API 정적사이트를 생성
+![](img/docFX.PNG)
 
 
 # Personal Experience & Projects
